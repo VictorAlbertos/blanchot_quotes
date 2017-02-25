@@ -12,7 +12,7 @@ $(document).ready(
                 thumbnailWidth: 'auto',
                 thumbnailHeight: 500,
                 theme: 'clean',
-                itemsBaseURL: 'http://textos.victoralbertos.com/wp-content/uploads/2017/02/',
+                itemsBaseURL: 'http://138.68.137.58/blanchot_quotes/res/',
                 thumbnailLabel: {display: false},
                 viewerToolbar: {display: false}
             }

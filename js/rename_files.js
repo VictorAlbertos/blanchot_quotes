@@ -2,7 +2,7 @@
 // El libro que vendrá
 
 const fs = require('fs');
-const dirname = 'images';
+const dirname = '../res';
 
 fs.readdir(dirname, function(err, fileNames) {
     if (err) throw err;
