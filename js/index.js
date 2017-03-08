@@ -1,3 +1,17 @@
+/**
+ * Randomize array element order in-place.
+ * Using Durstenfeld shuffle algorithm.
+ */
+function shuffleArray(array) {
+    for (var i = array.length - 1; i > 0; i--) {
+        var j = Math.floor(Math.random() * (i + 1));
+        var temp = array[i];
+        array[i] = array[j];
+        array[j] = temp;
+    }
+    return array;
+}
+
 $(document).ready(
     function () {
         var items = [];
@@ -6,9 +20,11 @@ $(document).ready(
             items.push({src: i+'.png', srct: i+'.png'});
         }
 
+        var shuffledItems = shuffleArray(items);
+
         $("#nanoGallery").nanoGallery(
             {
-                items: items,
+                items: shuffledItems,
                 thumbnailWidth: 'auto',
                 thumbnailHeight: 500,
                 theme: 'clean',
