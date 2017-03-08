@@ -1,3 +1,3 @@
-# Maurice Blanchot's quotes
+# Maurice Blanchot quotes
 
 A mindfuck quotes [website](http://www.mauriceblanchot.fr).
